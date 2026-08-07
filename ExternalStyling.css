@@ -1,0 +1,4 @@
+ H1 {background-color: brown ;width: 800px;height: 300; ;margin-left:50px;text-align: center;}
+p {font-size: 30px ;background-color: black;color:white ;border:3px red solid;;}
+legend {font-size: large;color: brown;;border: blue dotted 4px ;background-color: darkgrey;}
+fieldset {border: dashed 6px green;}
