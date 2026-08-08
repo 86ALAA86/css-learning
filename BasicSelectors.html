@@ -18,24 +18,33 @@
         position: center ;
     }
 
+    /* here is a multi element selector */
     table , th, td {
         border:1px dashed blue;
     }
 
+    /* Here is an id selector , it is applied to elements that has this id in it's definition. */
     #unique {
         color :darkblue;
         font-weight: bold;
     }
 
+    /* here is attribute selector it works like this : so go and see all X elements and only the 
+    X elements that do have the Value V in the attribute A "A :V " then apply these ruls. */
     input[type="text"] {
         border :2px dotted green;
         padding :5px;
     }
 
+    /* here is pseduo-class selector it work like this : go to all X elements and 
+    apply these ruls on this state */
     a:hover{
         color :white;
     }
 
+    /* here is class selector it does apply these set of rules only on elements don't matter
+    what are they (p , dev , header , table , ...) but it should has an attribute
+    class :.highlight */
     .highlight {
         background-color: purple;
     }
