@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        
+        p {color :blue}
+
+        .p {color : green}
+        .pp {color :yellow  ;font-size: 40px;}
+
+        .p.pp {
+            color :purple ;border: 5px red dashed;
+        }
+
+        #p {color : orange}
+
+    </style>
+
+
+</head>
+<body>
+
+    <p>this paragraph should be in blue , because no other selectores affect it</p>
+    <p class="p">this paragraph should be in green, because it has only a class selector affecting it</p>
+    <p id="p" class="p">this paragraph should be in orange, because it has an id selector affecting it</p>
+    <p id="p" class="p" style="color: red;">this paragraph should be in red, because it has inline style affecting it</p>
+
+    <p class ="pp p">Test </p>
+
+    
+</body>
+</html>
