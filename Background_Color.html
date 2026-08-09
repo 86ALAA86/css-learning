@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background-color Example</title>
+
+
+    <style>
+        body {
+            background-color: black;
+            font-family: arial , sans-serif;
+            margin: 20px;
+
+        }
+
+        header {
+            background-color: #4CAF50;
+            color :white ;
+            padding :20px;
+            text-align: center;
+        }
+
+        section {
+            background-color: #fff;
+            padding :20px;
+            margin :20px 0;
+            border :1px solid #DDD;
+        }
+
+        h1,h2,h3 {
+            background-color: #2196f3;
+            color :white;
+            padding :10px;
+        }
+
+        p {
+            background-color: #FFEB3B;
+            padding :10px;
+            line-height: 1.5;
+            margin-bottom: 10px;
+        }
+
+        span {
+            background-color: #E91E63;
+            color :white;
+            padding :5px;
+        }
+
+        ul li:nth-child(even) {
+            background-color: #B2EBF2;
+            padding :5px;
+        }
+
+         ul li:nth-child(odd) {
+            background-color: #91d9e3;
+            padding :5px;
+        }
+
+        table {
+            width :100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th {
+            background-color: #9C27B0;
+            color: white;
+            padding: 10px;
+            border :1px solid #CCC;
+        }
+
+        td {
+            background-color: #F3E5f5;
+            padding: 10px;
+            border: 1px solid #CCC;
+        }
+
+        input,textarea,button {
+            background-color: #FFF;
+            padding: 8px;
+            border :1px solid #AAA;
+            margin-bottom: 10px;
+        }
+
+        button {
+            background-color: #ff5722;
+            color: white;
+            cursor: pointer;;
+        }
+
+        a {
+            background-color: #03A9F4;
+            color: white;
+            padding: 5px;
+            text-decoration: none;
+        }
+
+        p::first-line {
+            background-color: #C8E6C9;
+        }
+
+
+    </style>
+
+
+</head>
+<body>
+    <header>
+        <h1>Welcome to CSS Background-Color Example !</h1>
+    </header>
+
+    <section>
+        <h2>Text Elements</h2>
+        <p>This paragraph demonstrates the use of background-color with a yellow hue .
+            notice how the first line has a light green background due to the pseudo-element styling.
+            <br>
+            This is the second line in the paragraph.
+        </p>
+        <p>
+            Here is another paragraph with the same styling. 
+            <br>
+            this is the second line in the paragraph.
+        </p>
+        <span>this span element is styled with a pink background .</span>
+    </section>
+
+    <section >
+        <h2>Lists</h2>
+        <ul>
+            <li>List Item One</li>
+            <li>List Item Two</li>
+            <li>List Item Three</li>
+            <li>List Item Four</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Tables</h2>
+        <table>
+            <thead>
+                <th>Header 1</th>
+                <th>Header 2</th>
+            </thead>
+            <tbody>
+                <tr><td>Cell 1</td><td>Cell 2</td></tr>
+                <tr><td>Cell 3</td><td>Cell 4</td></tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section> 
+        <h2>Form Elements</h2>
+        <form >
+            <label for="name">Name :</label><br>
+            <input type="text" id="name" placeholder="Enter your name"><br>
+      
+            <label for="message">Message:</label><br>
+            <textarea id=" message" placeholder="Enter your message"></textarea>  <br>  
+            <button type="submit">Submit</button>  
+        </form>
+    </section>
+
+    
+</body>
+</html>

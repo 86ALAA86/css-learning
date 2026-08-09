@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            background-color: white;
+            border: 9px black solid ;
+        }
+
+        header {
+            background-color: darkgray;
+            width: 95%;
+            height: auto;
+            margin-left: 33px;
+            
+        }
+
+        h1 ,h2{
+            background-color: gainsboro;
+            text-align: center;
+            
+        }
+        nav ul {
+            background-color: silver;
+            font-size: large;
+            text-align: center;
+        }
+
+         nav ul li{
+            background-color: black;
+            list-style-type: disc;
+            color: white;
+            margin :4px;
+            display: inline;
+            
+        }
+
+        fieldset {
+            background-color: rgb(125, 125, 173);
+            border: 4px darkblue solid;
+            
+        }
+        legend {
+            background-color: rgb(38, 38, 68) ;
+            color: white;
+        }
+
+        p {
+            background-color: white;
+        }
+        p::first-line {
+            background-color: rgb(197, 197, 207);
+        }
+        p::first-letter {
+            background-color: rgb(218, 120, 120);
+            font-size: large;
+        }
+
+        span {
+            background-color: rgb(150, 202, 182);
+        }
+        #links p {
+            background-color: rgb(195, 38, 150);
+            
+        }
+
+        #links p::first-line {
+            background-color:inherit
+        }
+        #links p::first-letter {
+            font-size: large;
+        }
+
+        a {
+            background-color: white;
+        }
+
+        table {
+            width :80%;
+            height: auto ;
+            border :4px dashed red;
+            font-size: large;
+            margin-left: 110px;
+           
+        }
+        th , td  {
+            border :2px white solid ;
+             text-align: center;
+        }
+        thead {
+            background-color: rgb(63, 129, 110);
+            font-size: 30px;
+        }
+
+        label {
+            background-color: rgb(233, 146, 146);
+        }
+
+        input[type="text"],
+        input[type="email"]
+        {
+            size: 20px;
+            border :4px rgb(29, 153, 20) dashed;
+        }
+
+        input[type="radio"]
+        {
+          size: 50px;
+        }
+
+       
+
+
+
+
+
+
+    </style>
+
+
+
+
+</head>
+<body>
+
+    <header>
+        <h1>Practice on Using Background colors </h1>
+        <nav>
+            <ul style="list-style-type: none;">
+                <li>Home </li>
+                <li>About</li>
+                <li>News</li>
+                <li>Account</li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        
+            <h2>Here in this page the main foucs is on Background colors .</h2>
+            <fieldset>
+                <legend>Paragraphs</legend>
+                <p>First paraprahp , my first line would have a color <br><span>and the second line has another color lol.</span></p>
+                <p>Second paraprahp , my first line would have a color 
+                    <br><span> and the second line has another color lol.</span></p>
+            </fieldset>
+             <fieldset id = "links">
+                <legend >Links</legend>
+                <p><a href="#">Am a very Important link so am in red </a></p>
+                <p><a href="#">Am an Important link but not as the one on top of me so am in orange </a></p>
+                <p><a href="#">Am not an Important link so am in green </a></p>
+
+            </fieldset>
+            <fieldset>
+                <legend>Table</legend>
+                <table>
+                    <thead><tr><th>Col1</th><th>Col2</th><th>Col3</th></tr></thead>
+
+                    <tfoot><tr><td>f1</td><td>f2</td><td>f3</td></tr></tfoot>
+
+                    <tbody><tr><td>r1c1</td><td>r1c2</td><td>r1c3</td></tr></tbody>
+                    <tbody><tr><td>r2c1</td><td>r2c2</td><td>r2c3</td></tr></tbody>
+                    <tbody><tr><td>r3c1</td><td>r3c2</td><td>r3c3</td></tr></tbody>            
+                </table>
+            </fieldset>
+
+             <fieldset>
+                <legend>Label & Inputs</legend>
+
+                <label for="firstname">First Name :</label>
+                <input type="text" id="firstname" name="firstname" placeholder="Enter Your First Name . ">
+
+                <label for="lastname">Last Name :</label>
+                <input type="text" id="lastname" name="lastname" placeholder="Enter Your Last Name . ">
+
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" placeholder="Enter Your email . ">
+                <br>
+
+                <p> Year of Study :</p>
+                
+                <label for="firstyear">first year</label>
+                <input type="radio" id="firstyear" name="yearofstudy" value="1">
+
+                <label for="Secondyear">second year</label>
+                <input type="radio" id="Secondyear" name="yearofstudy" value="2">
+
+                <label for="thirdyear">third year</label>
+                <input type="radio" id="thirdyear" name="yearofstudy" value="3">
+
+                <label for="forthyear">forth year</label>
+                <input type="radio" id="forthyear" name="yearofstudy" value="4">
+
+                <label for="fifthtyear">fifth year</label>
+                <input type="radio" id="fifthyear" name="yearofstudy" value="5">
+               
+                <br>
+                <label for="newsletter">Do you want to subscribe to our newsletter ?</label>
+                <input type="checkbox" name="newsletter" id="newsletter" checked>
+                
+            </fieldset>
+
+        
+    </main>
+    
+</body>
+</html>
