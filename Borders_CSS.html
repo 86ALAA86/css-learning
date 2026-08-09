@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borders in CSS</title>
+
+    <style>
+
+        .basic-border {
+            border :2px solid red ;
+            padding :10px ;
+            margin :20px;
+        }
+
+        .dashed-border {
+            border :3px dashed green ;
+            padding :10px ;
+            margin :20px;
+        }
+
+        .dotted-border {
+            border :4px dotted blue ;
+            padding :10px ;
+            margin :20px;
+        }
+
+        .double-border {
+            border :5px double purple;
+            padding :10px ;
+            margin :20px;
+        }
+
+        .custom-border {
+            border-width: 4px;
+            border-style:double ;
+            border-color :#FF5733;
+            padding :15px;
+            margin :20px;
+        }
+
+        .rounded-border {
+            border:3px solid #3498db;
+            border-radius: 15px;
+            padding :20px;
+            margin :20px;
+            text-align: center ;
+            
+        }
+
+        .complex-border {
+            border-top :4px solid #2ecc71;
+            border-right: 4px dashed #e74c3c;
+            border-bottom :4px double #3498db;
+            border-left: 4px dotted #f1c40f;
+            padding :20px;
+            margin:  20px;
+        }
+
+
+        
+
+
+    </style>
+
+</head>
+<body>
+
+    <div class ="basic-border"> This div has a basic 2px solid red border. </div><br>
+    <div class ="dashed-border">Thid div has a 3px dashed green border .</div><br>
+    <div class ="dotted-border">Thid div has a 4px dotted green border .</div><br>
+    <div class ="double-border">Thid div has a 5px double green border .</div><br>
+    <div class ="custom-border">Thid div uses individual border properties to set a 4px solid border with custom color .</div><br>
+    <div class="rounded-border">This div has rounded borders thanks to border-radius property.</div><br>
+     <div class="complex-border">
+    This div demonstrates different border styles on each side. Notice how each side has its own unique style and color.
+  </div>
+</body>
+</html>
