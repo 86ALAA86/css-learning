@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Margins in CSS</title>
+
+    <style>
+
+        .box {
+            background-color: rgb(105, 153, 195);
+            border: 1px solid #ccc;
+            margin: 20px ; /*20px margin on all sides */;
+            padding :10px;   
+        }
+
+        .container {
+            background-color: rgb(147, 192, 170);
+            border : 1px solid #00796b;
+            margin-top: 30px;
+            margin-right: 50px;
+            margin-bottom: 30px;
+            margin-left: 50px;
+            padding :15px;
+        }
+
+        .one-value {
+            margin : 20px ; /* All sides  are 20px */ 
+            background-color: #fce4ec;
+            padding : 10px;
+        }
+
+        .two-values {
+            margin : 10px 30px ;/*10px top and bottom , 30px left and right */
+            background-color: #e8f5e9;
+            padding :10px;
+        }
+
+        .three-values {
+            margin :5px 15px 25px ;/*5px top ,15px left and right  , 25px bottom */ 
+            background-color: #e3f2fd;
+            padding :10px;
+        }
+
+        .four-values {
+            margin :10px 20px 30px 40px ;/* top ,right , bottom ,left */
+            background-color: #fff3e0;
+            padding :10px ;
+        }
+        
+        .negative-margin {
+            background-color :#ffeb3b;
+            border :1px solid  #0f0e0d;
+            margin : -20px;
+            padding :20px ;
+        }
+
+        .centered {
+            width: 50%;
+            background-color: #c5cae9;
+            margin: 20px auto ;
+            padding :20px;
+            text-align :center;
+        }
+
+    </style>
+
+</head>
+<body>
+
+     <div class="negative-margin">
+    This div uses a negative margin to pull itself closer to adjacent elements.
+  </div>
+      <div class="container">This container has 3px margin on top and bottom , and 50px margin on left and right . </div>
+
+
+    <div class="box">This div has a 20px margin on all 4 sides . </div>
+
+     <div class="one-value">Margin: 20px on all sides.</div>
+     <div class="two-values">Margin: 10px top/bottom, 30px left/right.</div>
+     <div class="three-values">Margin: 5px top, 15px left/right, 25px bottom.</div>
+     <div class="four-values">Margin: 10px top, 20px right, 30px bottom, 40px left.</div>
+
+      <div class="centered">
+    This div is centered horizontally using auto margins.
+  </div>
+
+
+</body>
+</html>
