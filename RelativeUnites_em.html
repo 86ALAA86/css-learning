@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relative Unites EM</title>
+
+    <style>
+        .em-box {
+            font-size: 2em ;
+            padding :1em ;
+            background :#bbdefb;
+            border :2px dashed #1976d2;
+            margin :20px auto;
+            text-align: center;
+        }
+        .container {
+            font-size :16px;
+            margin :20px ;
+            background-color: #1976d2;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .parent {
+            font-size: 1.5em ;
+            background :#e0f7fa;
+            padding :10px;
+            margin-bottom: 10px;
+        }
+
+        .child {
+            font-size: 1.5em;
+            background :#b2ebf2;
+            padding :10px;
+            margin-top :10px;
+        }
+
+        .grandchild {
+            font-size: 1.5em;
+            background :#80deea;
+            padding :10px;
+            margin-top :10px;
+        }
+
+
+
+    </style>
+
+</head>
+<body>
+    <div class ="em-box">2em font-size , 1em padding </div>
+
+    <div class="container">
+                   container text is <strong>16px</strong> .
+        <div class="parent">
+            parent text is <strong>24px</strong> (1.5em * 16em).
+            <div class="child">
+                child text is <strong>36px</strong> (1.5em *24px)
+                <div class="grandchild">
+                    Grandchild text is <strong>54px</strong> (1.5 *36px)
+                </div>
+            
+            </div>
+
+        </div>
+
+
+    </div>
+    
+</body>
+</html>
