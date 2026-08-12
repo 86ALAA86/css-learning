@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position property </title>
+
+    <style>
+
+
+        .Relative {
+            position: relative;
+            top: 30px;
+            left: 30px;
+            background-color: rgba(211, 93, 93, 0.601);
+            border: 2px solid rgb(62, 0, 0);
+            width: 80%;
+            height: 100px;
+        }
+
+        .absolute {
+            position: absolute;
+            top :10px;
+            right: 10px;
+            background-color: rgba(80, 80, 155, 0.683);
+            border :2px dotted blue;
+        }
+
+        .sticky {
+            position:sticky;
+            top :0;
+            border: 3px solid yellow;
+            background-color:rgba(139, 139, 62, 0.485);
+        }
+
+        .justdiv {
+            width:400px;
+             height:300px;
+             border: 3px solid green;
+            background-color: rgb(70, 137, 70);
+           margin: 50px auto;
+        }
+
+        .chat {
+            position: fixed;
+            top: 20px;
+            right:20px;
+            width: 40px;
+            height: 40px;
+            background-color: rgb(114, 8, 25);
+            border: 2px solid rgb(155, 51, 69);
+        }
+    </style>
+
+</head>
+<body>
+    <body>
+    <div class="Relative">
+        I'm relatively positioned
+        <div class="absolute">
+            I'm absolutly positioned
+        </div>
+    </div>
+
+    <div  class="justdiv">
+        Just  a div 
+    </div>
+
+    <div  class="justdiv">
+        Just  a div 
+    </div>
+    
+    <div  class="justdiv">
+        Just  a div 
+    </div>
+
+    <button class="chat"></button>
+    
+    <div  class="justdiv">
+        Just  a div 
+    </div>
+
+    <div  class="sticky">
+        I'm Positioned Sticky
+    </div>
+    
+    <div  class="justdiv">
+        Just  a div 
+    </div>
+    
+    <div  class="justdiv">
+        Just  a div 
+    </div>
+</body>
+    
+</body>
+</html>
