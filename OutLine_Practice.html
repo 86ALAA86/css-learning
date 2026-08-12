@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OutLine Practice </title>
+    <style>
+        
+
+        .DebugLayout {
+            margin: 50px auto;
+            width: 40%;
+            height: auto;
+            outline: 4px solid rgba(0, 0, 0, 0.63);
+            outline-offset: 2px;
+            background-color: rgba(6, 199, 64, 0.549);
+            padding: 0.5em;
+            border: 1px solid red;
+        }
+
+        .code {
+            font-family: monospace ,sans-serif;
+            font-size:medium;
+            font-style: italic;
+            background-color: rgb(209, 237, 237);
+        }
+
+        a:focus {
+            outline: 2px dotted red;
+        }
+
+        a {
+            font-size: large;
+        }
+
+        .card {
+            background-color: rgba(0, 0, 0, 0.5);
+            width: 30%;
+            height: 150px;
+            margin :0 auto;
+        }
+
+        .card:hover {
+            outline: 3px solid blue ;
+        }
+
+
+    </style>
+    
+</head>
+<body>
+    <div class="DebugLayout">
+        <pre class="code">
+            public void GreetMe (string name) {
+                consol.writeline($"Hello {name}");
+            }
+        </pre>
+
+    </div>
+
+    <p><a href="#">Use tap to focus on me please </a></p>
+   
+    <div class="card"></div>
+</body>
+</html>
