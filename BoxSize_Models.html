@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Size Models </title>
+    <style>
+        .outerdiv {
+            display: flex;
+
+        }
+
+        .border-box {
+            box-sizing: border-box;
+            width : 30vw;
+            height: 150px;
+            background :rgba(159, 31, 31, 0.582);
+            margin :10px auto;
+            border :2px solid black;
+            padding: 20px;
+
+        }
+
+         .content-box {
+            box-sizing: content-box;
+            width : 25vw;
+            height: 150px;
+            background :rgba(42, 31, 159, 0.582);
+            margin :10px auto;
+            border :2px solid black;
+            padding: 20px;
+
+        }
+
+        p {
+            font-size:large;
+            margin:0 auto;
+        }
+
+        
+
+
+    </style>
+</head>
+<body>
+   
+
+      <div class="outerdiv">
+         <div class="border-box">
+        <p>This text is inside a div that has a class called border box which mean in this situation 
+            the defined width and height are for content and any padding and borders will be added not subtracted .
+        </p>
+    </div>
+    
+     <div class="border-box">
+        <p>This text is inside a div that has a class called border box which mean in this situation 
+            the defined width and height are for content and any padding and borders will be added not subtracted .
+        </p>
+    </div>
+    
+     <div class="border-box">
+        <p>This text is inside a div that has a class called border box which mean in this situation 
+            the defined width and height are for content and any padding and borders will be added not subtracted .
+        </p>
+    </div>
+
+    </div>
+
+      <div class="outerdiv">
+         <div class="content-box">
+        <p>This text is inside a div that has a class called content box which mean in this situation 
+            the defined width and height are for the whole element and any padding and borders will be subtracted .
+        </p>
+    </div>
+    
+     <div class="content-box">
+        <p>This text is inside a div that has a class called content box which mean in this situation 
+            the defined width and height are for the whole element and any padding and borders will be subtracted .
+        </p>
+    </div>
+    
+      <div class="content-box">
+        <p>This text is inside a div that has a class called content box which mean in this situation 
+            the defined width and height are for the whole element and any padding and borders will be subtracted .
+        </p>
+    </div>
+
+    </div>
+  
+    
+     
+
+    
+
+  
+    
+
+    
+</body>
+</html>
