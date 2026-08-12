@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Height and Width in CSS</title>
+
+    <style>
+        .fixed-box {
+            width :300px;
+            height :200px;
+            background-color :#D1C4E9;
+            border: 2px solid #673AB7;
+            text-align: center;
+            line-height: 200px;
+            margin :20px auto;
+        }
+
+        .responsive-box {
+            width :100%;
+            max-width: 800px;
+            height: auto;
+            background-color: #B3E5FC;
+            border :2px solid #0288D1;
+            margin :20px auto ;
+            padding :20px;
+            box-sizing: border-box;
+        }
+
+        .auto-height {
+            width: 400px ;
+            height :auto;
+            background-color: #FFCDD2;
+            border :2px solid #C62828;
+            margin :20px auto ;
+            padding :20px ;
+            box-sizing: border-box;
+        }
+
+        .combined-box {
+            width :90%;
+            max-width: 500px;
+            height: 300px;
+            background-color: #C8E6C9;
+            border :2px solid #2E7D32;
+            margin :20px auto ;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+
+
+
+    </style>
+
+
+</head>
+<body>
+
+    <div class="fixed-box">Fixed Box </div>
+    <div class="responsive-box"> 
+        This box has a responsive width that fills the container upt to a maximum of 800px. 
+    </div>
+
+    <div class="auto-height">
+        <h2>Auto Height example </h2>
+        <p>
+            This element has a fixed width but its height is set to auto ,
+            meaning it adusts based on the content inside .
+        </p>
+        <p>
+            This is useful for dynamic content where the amount of text or other elements may vary. 
+        </p>
+    </div>
+
+    <div class="combined-box">
+        This box combine a responsive width with a fixed height . it adjusts its width based on the container but maintains a conistent height .
+    </div>
+    
+</body>
+</html>
