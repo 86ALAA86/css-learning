@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query adabtive Width</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .flexContainer {
+            display: flex ;
+            flex-wrap: wrap;
+            padding: 0.2rem;
+            gap:0.5rem 1rem;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;  
+            background-color: rgba(4, 4, 4, 0.445);      
+        }
+
+        .flexItem {
+            display: flex;
+            padding: 1rem;
+            align-items:center ;  
+            justify-content: center;
+            font-size: 2rem;
+            min-width: 00px;
+            height:150px;
+            flex : 1 1 calc( 25% - 1rem);
+            background-color: rgba(247, 247, 247, 0.445);
+        }
+         @media screen and (max-width :1200px)
+        {
+            .flexItem {
+                background-color:red;
+                flex: 1 1 calc(33% - 1rem);
+            }
+        }
+
+                 @media screen and (max-width :800px)
+        {
+            .flexItem {
+                background-color: blue;
+                flex: 1 1 calc(50% - 1rem);
+            }
+        }
+
+           @media screen and (max-width :600px)
+        {
+            .flexItem {
+                background-color: green;
+                flex: 1 1 calc(100% - 1rem);
+            }
+        }
+            
+        
+
+         
+            
+        
+
+        
+
+       
+            
+        
+
+        
+
+
+    </style>
+
+
+
+</head>
+<body>
+
+    <div class="flexContainer">
+
+       <div class="flexItem"> 
+       box 1
+       </div>
+
+       
+       <div class="flexItem"> 
+        box 2
+       </div>
+
+       <div class="flexItem"> 
+        box 3
+       </div>
+
+       <div class="flexItem"> 
+        box 4
+       </div>
+
+       <div class="flexItem"> 
+        box 5
+       </div>
+
+       <div class="flexItem"> 
+        box 6
+       </div>
+
+       <div class="flexItem"> 
+        box 7
+       </div>
+
+    </div>
+    
+</body>
+</html>

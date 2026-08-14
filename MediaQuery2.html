@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query Orientation example</title>
+
+    <style>
+
+       
+        .landscape {
+        color: white;
+        }
+
+         .portrait {
+        color: white;
+        }
+
+        @media screen and (orientation: portrait) {
+            body {
+                background-color: red;
+            }
+
+            .landscape {
+                display: none;
+            }
+        }
+
+         @media screen and (orientation: landscape) {
+            body {
+                background-color: green;
+            }
+
+            .portrait {
+                display: none;
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <h1 class="portrait">Now am Portrait </h1>
+    <h1 class="landscape">Now am landsacpe </h1>
+
+    
+</body>
+</html>
