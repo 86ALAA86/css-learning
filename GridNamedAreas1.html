@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Named Areas</title>
+
+    <style>
+
+        *{
+            margin :0px;
+            padding :0px;
+            box-sizing: border-box;
+        }
+
+        .GridContainer {
+            display: grid;
+            grid-template-areas: 
+            "Header Header"
+            "Sidebar Main"
+            "Footer Footer";
+            
+            grid-template-columns: 80px 1fr;
+            grid-template-rows: 80px 1fr 80px;
+            
+            gap :0.5rem;
+            border :2px solid red;
+            background-color: rgba(5, 5, 5, 0.556);
+
+            height: 100vh;
+            padding: 1rem;
+        }
+
+        .Header {
+            grid-area: Header;
+            display: flex;
+            background-color: blue;
+            border: 1px solid white;
+            justify-content: center;
+            align-items: center;
+            font-size: large;
+            color: aliceblue;
+            
+        }
+
+         .Sidebar {
+                        grid-area: Sidebar;
+display: flex;
+
+            background-color: rgb(48, 135, 164);
+            border: 1px solid white;
+              justify-content: center;
+            align-items: center;
+            font-size: large;
+            color: aliceblue;
+        }
+
+         .Main {
+                        grid-area: Main;
+           display: flex;
+
+            background-color: navy;
+            border: 1px solid white;
+              justify-content: center;
+            align-items: center;
+            font-size: large;
+            color: aliceblue;
+            border-radius: 30px;
+        }
+
+         .Footer {
+                        grid-area: Footer;
+            display: flex;
+            background-color:rgb(26, 80, 87);
+            border: 1px solid white;
+              justify-content: center;
+            align-items: center;
+            font-size: large;
+            color: aliceblue;
+        }
+
+
+          @media screen and (max-width :600px)
+       {
+        .GridContainer {
+
+             grid-template-areas: 
+            "Header"
+            "Main"
+            "Sidebar"
+            "Footer";
+            
+            grid-template-columns:1fr;
+            grid-template-rows: 80px 1fr 80px 80px;
+
+            
+        }
+
+       }
+
+
+
+
+
+
+
+
+
+
+    </style>
+
+</head>
+<body >
+
+
+  <div class="GridContainer">
+
+      <header class="Header">
+Header
+    </header>
+
+    <aside class="Sidebar">
+Sidebar
+    </aside>
+
+    <main class="Main">
+Main
+    </main>
+
+    <footer class="Footer">
+Footer
+    </footer>
+  </div>
+
+    
+</body>
+</html>

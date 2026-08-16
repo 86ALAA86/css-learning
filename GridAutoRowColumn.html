@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto Rows and Auto Columns (Implicit )</title>
+
+    <style>
+        
+        *{
+            margin: 0px;
+            padding :0px;
+            box-sizing: border-box;
+        }
+        .gridContainer1 {
+            display: grid ;
+            grid-template-columns: repeat(2,200px);
+            grid-auto-rows: 80px;
+            background-color: rgba(14, 8, 8, 0.623);
+            border: 2px red solid;
+            gap :1rem;
+
+            justify-content: space-evenly;
+            align-content: center;
+
+            justify-items: stretch;
+            align-items:   stretch;
+            height: 300px;
+
+        }
+
+        .gridItem1 {
+            border :3px solid red;
+            background-color: white;
+        }
+
+        .gridSpecialItem1 {
+            background-color: green;
+            justify-self:start;
+            align-self: start;
+        }
+
+
+         .gridContainer2 {
+            display: grid ;
+            grid-template-rows: repeat(2,150px);
+            grid-auto-flow: column;
+            grid-auto-columns: 100px;
+            background-color: rgba(14, 8, 8, 0.623);
+            border: 2px red solid;
+            gap :1rem;
+
+            justify-content: start;
+            align-content: start;
+
+            justify-items: stretch;
+            align-items:stretch;
+
+            height: 300px;
+
+        }
+
+        .gridItem2 {
+            border :3px solid red;
+            background-color: white;
+        }
+
+        .gridSpecialItem2 {
+            background-color: green;
+            justify-self:start;
+            align-self: start;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Implicit Rows and Columns :</h1>
+    <h2>Implicit Rows :</h2>
+    <div class="gridContainer1">
+
+        <div class="gridItem1">box 1</div>
+        <div class="gridItem1">box 2</div>
+        <div class="gridItem1">box 3</div>
+        <div class="gridItem1">box 4</div>
+        <div class="gridItem1">box 5</div>
+        <div class="gridItem1">box 6</div>
+
+    </div>
+
+    <h2>Implicit Cols :</h2>
+    <div class="gridContainer2">
+
+        <div class="gridItem2">box 1</div>
+        <div class="gridItem2">box 2</div>
+        <div class="gridItem2">box 3</div>
+        <div class="gridItem2">box 4</div>
+        <div class="gridItem2">box 5</div>
+        <div class="gridItem2">box 6</div>
+
+    </div>
+    
+</body>
+</html>

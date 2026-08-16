@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Auto Flow (Item Placement) </title>
+
+    <style>
+
+        * {
+            margin :0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        
+        .gridContainer {
+            display: grid ;
+            grid-template-columns: repeat(3,100px);
+            grid-template-rows: repeat(2,80px);
+            background-color: rgb(189, 220, 247);
+            border :4px solid red;
+            gap :1rem 1rem;
+            padding: 1rem;
+            margin :1rem;     
+        }
+
+        .gridItem {
+            display: flex;
+            background-color: black;
+            border :1px solid blue;
+            font-size: large;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+
+        .rowFlow {
+            grid-auto-flow: row;
+        }
+
+        .colFlow {
+            grid-auto-flow: column;
+        }
+
+        .rowDenseFlow {
+            grid-auto-flow:row dense;
+        }
+
+        .rowDenseFlow .item3 {
+            grid-column: span 2;
+        }
+
+         .colDenseFlow {
+            grid-auto-flow:column dense;
+        }
+
+        .colDenseFlow .item3 {
+            grid-row: span 2;
+        }
+
+        
+
+
+
+
+    </style>
+
+
+</head>
+<body>
+    <h2 style="margin :1rem;  ">gird-auto-flow :row ;</h2>
+    <div class="gridContainer rowFlow">
+        <div class="gridItem"> box 1</div>
+        <div class="gridItem"> box 2</div>
+        <div class="gridItem"> box 3</div>
+        <div class="gridItem"> box 4</div>
+        <div class="gridItem"> box 5</div>
+        <div class="gridItem"> box 6</div>
+
+    </div>
+
+    <h2 style="margin :1rem;  ">gird-auto-flow :col ;</h2>
+    <div class="gridContainer colFlow">
+        <div class="gridItem"> box 1</div>
+        <div class="gridItem"> box 2</div>
+        <div class="gridItem"> box 3</div>
+        <div class="gridItem"> box 4</div>
+        <div class="gridItem"> box 5</div>
+        <div class="gridItem"> box 6</div>
+
+    </div>
+
+     <h2 style="margin :1rem;  ">gird-auto-flow :col dense ;</h2>
+    <div class="gridContainer rowDenseFlow">
+        <div class="gridItem"> box 1</div>
+        <div class="gridItem"> box 2</div>
+        <div class="gridItem item3"> box 3</div>
+        <div class="gridItem"> box 4</div>
+        <div class="gridItem"> box 5</div>
+        <div class="gridItem"> box 6</div>
+
+    </div>
+
+      <h2 style="margin :1rem;  ">gird-auto-flow :col dense ;</h2>
+    <div class="gridContainer colDenseFlow">
+        <div class="gridItem"> box 1</div>
+        <div class="gridItem"> box 2</div>
+        <div class="gridItem item3"> box 3</div>
+        <div class="gridItem"> box 4</div>
+        <div class="gridItem"> box 5</div>
+        <div class="gridItem"> box 6</div>
+
+    </div>
+    
+    
+</body>
+</html>

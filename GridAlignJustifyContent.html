@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Justify-content & Align-content</title>
+
+    <style>
+        * {
+            margin: 0;padding: 0;box-sizing: border-box;
+        }
+        .flexContainer {
+            margin: 3rem auto;
+            display: flex;
+            flex-wrap:wrap;
+            background-color: rgba(172, 172, 235, 0.507);
+             height: 200px;
+             border: 2px solid black;
+             justify-content: space-evenly;
+             align-content:space-around;
+             gap :0.5rem;
+
+        }
+
+        .flexItem {
+            flex: 0 0 100px;
+            border :2px solid red;
+            background-color: aliceblue;
+            
+        }
+
+        .GridContainer {
+            display: grid;
+            grid-template-columns: repeat(2 ,150px);
+
+            align-content: end;
+            justify-content: space-between;
+            height:200px;
+            gap: 0.5rem ;
+            background-color: lightsalmon;
+        }
+
+        .gridItem {
+            background-attachment: white;
+            border:  2px solid red;
+        }
+
+
+
+
+
+
+    </style>
+
+
+
+
+
+</head>
+<body>
+    <h1>How to use Justify-content & Align-content</h1>
+    <h2>Flex Container : </h2>
+
+    <div class="flexContainer">
+
+        <div class="gridItem">box1</div>
+        <div class="gridItem">box2</div>
+        <div class="gridItem">box3</div>
+        <div class="gridItem">box4</div>
+        <div class="gridItem">box5</div>
+
+
+    </div>
+
+     <div class="GridContainer">
+
+        <div class="flexItem">box1</div>
+        <div class="flexItem">box2</div>
+        <div class="flexItem">box3</div>
+        <div class="flexItem">box4</div>
+        <div class="flexItem">box5</div>
+        <div class="flexItem">box6</div>
+     
+
+    </div>
+    
+</body>
+</html>
