@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float Clear</title>
+    <style>
+        *{box-sizing: border-box;
+            margin: 0;
+            padding: 0;}
+        .float-left {
+            float: left;
+            margin :1px;
+            width: 100px;
+            height: 50px;
+            background: azure url(Images/background1.png) center /cover;
+        }
+
+        .float-right {
+            float: right;
+            width: 100px;
+            height: 75px;
+            background: rgb(18, 110, 110) url(Images/background1.png) center /cover;
+        }
+
+        .clear-both {
+            clear: both;
+        }
+
+
+
+    </style>
+</head>
+<body>
+
+     <h1>CSS `float` and `clear` Demo</h1>
+
+  <!-- Floating image example -->
+  <section>
+    <h2>Floating an Image - Left</h2>
+    <div class="float-left"></div>
+    <p>
+      This paragraph wraps around the floated image. Floats allow inline content
+      to flow beside an image or box. Notice how text comes up alongside the
+      box until it clears the bottom edge, then continues full-width.
+      This paragraph wraps around the floated image. Floats allow inline content
+      to flow beside an image or box. Notice how text comes up alongside the
+      box until it clears the bottom edge, then continues full-width.
+    </p>
+    <div class="clear-both"></div>
+  </section>
+
+<section>
+    <h2>Floating an Image - Right</h2>
+    <div class="float-right"></div>
+    <p>
+      This paragraph wraps around the floated image. Floats allow inline content
+      to flow beside an image or box. Notice how text comes up alongside the
+      box until it clears the bottom edge, then continues full-width.
+    </p>
+   
+  </section>
+
+  <div style="margin :2rem;width: 100px;height: 100px;background-color: aquamarine; float: right;">
+    
+  </div>
+  <div class="clear-both"></div>
+
+  <div style="padding:2rem;width:100px;height: 100px;background-color: rgb(206, 165, 127); ">
+    
+  </div>
+
+    
+</body>
+</html>
