@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Elements </title>
+
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        .btn-search {
+            background-color: rgba(60, 60, 245, 0.734);
+            border: 2px solid black;
+            border-radius: 10px;
+            padding: 0.5rem ;
+            margin :1rem;
+        }
+
+        .btn-search::before {
+            content :"🔍";      
+        }
+
+        .blockquote1 {
+            background-color: rgba(0, 0, 0, 0.477);
+            position: relative;
+            border-left:4px solid blue ;
+            
+            font-size: large;
+            height: 2rem;
+            padding: 0.5rem 1rem;
+        }
+
+        .blockquote1::before {
+            content: "”";
+            position: absolute;
+            top: 0px;left: 0px;
+            font-size: 2rem;
+        }
+
+        .card {
+            font-size: large;
+            background-color: rgba(128, 128, 128, 0.559);
+            color: white;
+            border: 2px solid blue;
+            margin: 1rem;
+            padding: 1rem;
+            width: 200px;
+            height: 210px;
+            position: relative;
+        }
+
+        .card h2 {
+            margin-bottom: 1.5rem;
+        }
+
+        .card::after {
+            content: "New";
+            font-size: large;
+            background-color: red;
+            color: white;
+            border-bottom-left-radius:5px ;
+            border-bottom-right-radius: 5px;
+            position: absolute;
+            top :1px;right: 3px;
+        }
+
+
+
+
+
+
+
+
+
+
+    </style>
+
+</head>
+<body style="margin: 1rem;">
+
+    <h1>Using Pseudo Elements to insert and decorate HTML Elements :</h1>
+
+    <h2 style="margin-top: 2rem;"> ::before to insert a lense before the real content of this button</h2>
+    <button class="btn-search">
+        search 
+    </button>
+
+        <h2 style="margin-top: 2rem;"> ::before to insert a double Quote before the real content of this p</h2>
+        <div class="blockquote1">
+            this is a simple example on how to use ::before pseudo elements 
+        </div>
+
+        <div class="card">
+            <h2>Card Element</h2>
+            <p>some stuff about the card here just a text with no reason or meaning , 
+                the use of this  text is to fill the spaces
+            </p>
+        </div>
+
+    
+</body>
+</html>
