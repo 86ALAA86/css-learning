@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi Column Layouts</title>
+
+    <style>
+        *{
+            margin :0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            margin :2rem;
+        }
+        .three-column {
+            column-count: 3;
+            column-gap: 1rem;
+            background-color: rgba(0, 0, 0, 0.42);
+            color: white;
+            border: 1px solid blue;
+            margin: 1rem;
+        }
+
+         .three-column-rule {
+            column-count: 3;
+            column-rule: 1px solid red;
+            column-gap: 1rem;
+            background-color: rgba(0, 0, 0, 0.42);
+            color: white;
+            border: 1px solid blue;
+                        margin: 1rem;
+
+        }
+
+        .auto-column {
+            column-width: 200px;
+            column-rule: 1px solid red;
+            column-gap: 1rem;
+            background-color: rgba(0, 0, 0, 0.42);
+            color: white;
+            border: 1px solid blue;
+            margin: 1rem;
+
+        }
+
+        .with-image {
+            column-count: 3;
+            column-gap: 1rem;
+            margin :20px;
+        }
+
+        .with-image img {
+            width: 10%;
+            height: auto;
+      break-inside: avoid;
+      margin-bottom: 1rem;
+      display: block;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <section class="three-column">
+        <h2>Three Columns in this section :</h2>
+          <p>
+      Our quarterly newsletter covers the latest advancements in sustainable technology,
+      practical health tips, and inspiring lifestyle stories. Each issue brings expert
+      insights, step-by-step guides, and community highlights—all arranged neatly into
+      three columns for easy reading.
+    </p>
+    </section>
+
+     <section class="three-column-rule">
+        <h2>Three Columns in this section :</h2>
+          <p>
+      Our quarterly newsletter covers the latest advancements in sustainable technology,
+      practical health tips, and inspiring lifestyle stories. Each issue brings expert
+      insights, step-by-step guides, and community highlights—all arranged neatly into
+      three columns for easy reading.
+    </p>
+    </section>
+
+    <section class="auto-column">
+        <h2>Three Columns in this section :</h2>
+          <p>
+      Our quarterly newsletter covers the latest advancements in sustainable technology,
+      practical health tips, and inspiring lifestyle stories. Each issue brings expert
+      insights, step-by-step guides, and community highlights—all arranged neatly into
+      three columns for easy reading.
+    </p>
+    </section>
+
+    <section class="with-images">
+    <h2>4) Avoid Splitting Images Across Columns</h2>
+    <p>
+      Below are two snapshots from our team's recent retreat. We used CSS to ensure each
+      image stays whole in its column, avoiding awkward splits between pages or columns:
+    </p>
+    <img src="Images/background1.png" alt="Team Retreat Photo 1">
+    <img src="Images/project.png" alt="Team Retreat Photo 2">
+  </section>
+    
+</body>
+</html>
