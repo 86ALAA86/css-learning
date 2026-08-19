@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadows in CSS</title>
+
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial ,sans-serif;
+            background: #f0f0f0;
+            padding: 2rem;
+            color: #333;
+            display: grid;
+            row-gap: 2rem;
+        }
+
+        h1  {
+            text-align: center;
+            font-size: 2.5rem;
+            text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.405);
+        }
+
+        .card-container {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+        }
+
+        .card {
+            background-color: #fff;
+            width: 180px;
+            height: 120px;
+            padding: 1rem;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            text-align: center;
+            transition: trasform 0.3s , box-shadow 0.3s;;
+        }
+
+        .card.soft {
+            box-shadow: 4px 4px 10px rgba(0,0,0,0.2);
+        }
+
+        .card.soft:hover {
+            box-shadow: 6px 6px 20px rgba(0,0,0,0.3);
+            transform: translateY(-5px);
+        }
+
+        .card.spread {
+            box-shadow: 2px 2px 5px rgba (0,0,0,0.15);
+        }
+
+        .card.spread:hover {
+            box-shadow: 2px 2px 5px 5px rgba(0,0,0,0.2);
+        transform: translateY(-5px);
+        }
+
+        .card.inset {
+            box-shadow: inset 0 0 10px rgba(0,0,0,0.3);
+        }
+        .card.inset:hover {
+            box-shadow: inset 0px 0px 10px rgba(0,0,0,0.4);
+        }
+
+        .image-demo {
+            text-align: center;
+        }
+
+        .image-demo img {
+            width :400px ;
+            border-radius: 8px ;
+            filter: drop-shadow(20px 50px 8px rgba(0,0,0,0.3));
+            transition: filter 1s;
+        }
+
+        .image-demo img:hover {
+            filter :drop-shadow(20px 20px 12px rgba(0,0,0,0.4))
+        }
+
+    </style>
+
+
+</head>
+<body>
+
+    <h1>CSS Shadow Effects 🌑✨</h1>
+
+    <section>
+        <h2 style="text-align: center;margin-bottom: 1rem;">Box Shadow Example</h2>
+        <div class="card-container">
+            <div class="card soft">Soft Shadow</div>
+            <div class="card spread">Spread Shadow</div>
+            <div class="card inset"> Inset Shadow</div>
+        </div>
+    </section>
+
+    <section style="text-align: center;">
+        <h2>Text Shadow Example</h2>
+        <p style="font-size: 1.25rem;text-shadow: 1px 1px 2px rgba(0,0,0,0.3);">
+            Shadows can make text pop !</p>
+    </section>
+
+    <section class="image-demo">
+        <h2>Drop-shadow Filter on Images </h2><br>
+        <img src="Images/project.png" alt="image-demo">
+    </section>
+    
+</body>
+</html>
