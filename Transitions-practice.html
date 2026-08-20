@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transitions Practice </title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin:0px;
+            padding: 0px;
+        }
+
+        .flex-container {
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            width: 90%;
+            height: 200px;
+            background-color: rgba(0, 0, 0, 0.385);
+            border: 2px solid blue;
+            border-radius: 8px;
+            margin :2rem auto ;
+            padding :1rem
+        }
+
+        .btn-primary {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 150px;
+            height: 100px;;
+            color: white ;
+            background-color: blue;
+            border: 2px solid white;
+            font-size: large;
+            border-radius: 10px;
+
+            box-shadow: 20px 20px 12px blue;
+            transition: box-shadow 1s linear;
+        }
+
+        .btn-primary:hover {
+            box-shadow: none;
+        }
+
+        .link-primary {
+            font-size: 3rem;
+            color :white;
+            text-decoration: none;
+            transition: text-decoration 5s ease ;
+            display: inline-block;
+            
+        }
+
+        .link-primary:hover {
+            text-decoration: underline;
+        }
+
+        .gallary {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            width: 90%;
+            height: 200px;
+            background-color: rgba(0, 0, 0, 0.385);
+            border: 2px solid blue;
+            border-radius: 8px;
+            margin :2rem auto ;
+            
+
+        }
+
+        .picture-item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 200px;
+            height: 150px;
+            background-color: white;
+            border: 2px solid red;;
+          
+        }
+
+        .picture-item img {
+            height: 100%;
+            width: 100%;
+            filter: brightness(200%);
+            transition: filter 2s ;         
+        }
+
+        .picture-item img:hover {
+            filter: brightness(100%);
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;margin: 2rem;">Transition Practice </h1>
+    <h2>Fade Button :</h2>
+    <div class="flex-container">
+
+        <button class="btn-primary">
+            Click
+        </button>
+
+    </div>
+
+     <h2>Underline link :</h2>
+    <div class="flex-container">
+
+      <a href="" class="link-primary">Click here</a>
+
+    </div>
+
+    <div class="gallary">
+        <div class="picture-item">
+            <img src="Images/background1.png" alt="">
+        </div>
+        <div class="picture-item">
+                        <img src="Images/background4.jpg" alt="">
+
+        </div>
+        <div class="picture-item">
+                        <img src="Images/background3.jpg" alt="">
+
+        </div>
+        <div class="picture-item">
+                        <img src="Images/background2.jpg" alt="">
+
+        </div>
+    </div>
+
+    
+</body>
+</html>
