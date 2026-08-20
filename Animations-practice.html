@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation Practice </title>
+    <style>
+        *{
+            margin: 0px ;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        
+        .flex-container {
+            display: flex;
+            margin: 1rem auto;
+            padding: 1rem;
+            border: 3px solid blue;
+            background-color: dimgray;
+            width: 100%;
+            height: 400px;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        .side-bar {
+            position: absolute;
+            background-color: white;
+            color: black;
+            border-radius: 10px;
+            height: 99%;
+            width: 20%;
+             top :2px; 
+            left :-18.5%; /*-19%*/
+        }
+  
+         @keyframes slide {
+            0% {  top :2px; 
+            left :-18.5%; /*-19%*/}
+
+             100% {  top :2px; 
+            left :0.2%; /*-19%*/}
+            
+        }
+       
+        .side-bar:hover {
+          animation: slide 1s ease forwards;
+          background-color: rebeccapurple;
+        }
+
+        .btn-hue {
+            width: 200px;
+            height: 100px;
+            border: 3px solid white;
+            background-color: black;
+            border-radius: 10px;
+            font-size: 1.5rem;
+            color: aliceblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            animation-name: hue;
+            animation-duration: 3s;
+            animation-timing-function: ease;
+            animation-delay: 0px;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-fill-mode: both;
+            animation-play-state: running;;;
+        }
+
+        @keyframes hue {
+            0% {background-color: green;}
+            50% {background-color: blue;}
+            100% {background-color: red;}         
+        }
+
+        .icon img {
+            width: 100px;
+            height: auto; 
+
+            animation-name: wiggle;
+            animation-duration: 3s;
+            animation-timing-function: ease;
+            animation-delay: 0px;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-fill-mode: both;
+            animation-play-state: running;
+
+            
+        }
+
+         @keyframes wiggle {
+            0% {transform: rotate(-5deg);}
+            100% {transform: rotate(5deg);}
+        }
+
+         .nav-bar {
+            position: fixed;
+            background-color: white;
+            color: black;
+            border-radius: 10px;
+            height: 12%;
+            width: 99%;
+            top :-40px; 
+            left :3px; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem ;
+            flex-wrap: nowrap;
+
+            animation-name: nav;
+            animation-duration: 5s;
+            animation-timing-function: ease;
+            animation-delay: 0px;
+            animation-iteration-count: 1;
+            animation-direction: alternate;
+            animation-fill-mode: both;
+            animation-play-state: running;
+
+        }
+        .nav-bar ul {
+            display: flex;
+            gap: 4rem;
+            list-style-type: none;
+        }
+
+        .nav-bar ul li {
+            position: relative;
+            font-size: 1.7rem;
+            text-decoration: none;
+        }
+
+        .nav-bar ul li:after {
+            content: "";
+             position: absolute;
+      left: 0; bottom: -2px;
+            width: 0%;
+            height: 3px;
+            background-color: red;
+            border-radius: 10px;
+            transition:width 1s ease 0s;
+
+        }
+
+        .nav-bar ul li:hover::after {
+            width: 100%;
+        }
+
+  
+         @keyframes nav {
+            0% {  top :-40px; 
+            left :3px; }
+
+             100% { top :2px; 
+            left :3px; }
+            
+        }
+
+
+
+    
+
+
+
+
+
+    </style>
+</head>
+<body>
+   
+
+      <div style="margin-top: 0px;height: auto;" class="flex-container">
+        <div class="nav-bar">
+            <ul>
+                <li>Home</li>
+                <li>contact</li>
+                <li>links</li>
+            </ul>
+        </div>
+
+          <div style="background-color: aquamarine;height: 200px;width: 100px;;"></div>
+
+          <div style="background-color: aquamarine;height: 200px;width: 100px;;"></div>
+
+          <div style="background-color: aquamarine;height: 200px;width: 100px;;"></div>
+
+          <div style="background-color: aquamarine;height: 200px;width: 100px;;"></div>
+    </div>
+
+    <div class="flex-container">
+        <div class="side-bar">
+            
+        </div>
+    </div>
+
+     <div class="flex-container">
+        <div class="btn-hue">Green Blue Red</div>
+    </div>
+
+     <div class="flex-container">
+        <div class="icon"><img src="Images/project.png" alt=""></div>
+    </div>
+    
+</body>
+</html>
