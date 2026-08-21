@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice about images </title>
+
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        .flex-container {
+            display: flex;
+            margin:1rem auto;
+            padding :0.5rem;
+            justify-content: center;
+            align-items: center;  
+            width: auto;
+            max-width: 1000px;
+            height: 200px;
+            background-color: rgba(0, 0, 255, 0.393);         
+            border-radius: 10px;
+            border:2px solid black;
+       
+        }
+
+        .profile-img {
+            width :100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: white;
+            border :4px solid red;
+            object-fit: cover;
+            transition: filter 1s ease 0;     
+        }
+
+        .profile-img:hover {
+            filter: drop-shadow(4px 4px 4px white)
+            drop-shadow(-4px -4px 4px white);
+        }
+
+        .grid-gallary {
+            display: grid ;
+            grid-template-columns: repeat(3,minmax(150px, 1fr));
+            grid-template-rows: repeat(3,minmax(150px, 1fr));
+
+            width: 100%;
+            max-width: 1000px;
+            height:600px;
+            border-radius: 10px;
+            border :3px solid rgb(8, 0, 255);
+            background-color: azure;
+            gap: 0.5rem;
+            margin :1rem auto;
+            justify-content: space-around;
+            justify-items:center ;
+            align-items: center;
+
+        }
+
+        .gallary-img {
+            width:90%;
+            height: 90%;
+            border: 2px solid rgb(223, 79, 2);
+            border-radius: 8px;
+            object-fit: cover;
+            filter: none;
+            transition: filter 1s ease-in-out 0s;
+        }
+
+    .grayscale:hover    { filter: grayscale(100%);}
+    .sepia:hover        { filter: sepia(100%);}
+    .blur:hover         { filter: blur(3px);  }
+    .brightness:hover   { filter: brightness(150%);}
+    .contrast:hover     { filter: contrast(200%);}
+    .hue:hover          { filter: hue-rotate(90deg); }
+    .invert:hover       { filter: invert(100%); }
+    .saturate:hover     { filter: saturate(200%);}
+    .shadow:hover       { filter: drop-shadow(2px 2px 5px rgba(0,0,0,0.5));}
+
+    .hero img {
+        width: 100vw;
+        height: 60vh;
+        object-fit: cover;
+    }
+    </style>
+
+
+
+</head >
+<body style="padding: 1rem ;">
+
+    <h1 style="text-align: center;">Images advanced practice </h1>
+
+    <h2 style="margin-left: 1.5rem;">Circular profile card: </h2>
+
+    <div class="flex-container">
+        <img class="profile-img" src="Images/background4.jpg" alt="">
+    </div>
+
+     <div class="grid-gallary">
+        <img class="gallary-img" src="Images/background1.png" alt="">
+        <img class="gallary-img" src="Images/background1.png" alt="">
+        <img class="gallary-img" src="Images/background1.png" alt="">
+        <img class="gallary-img" src="Images/background1.png" alt="">
+        <img class="gallary-img" src="Images/background1.png" alt="">
+        <img class="gallary-img" src="Images/background1.png" alt="">
+        <img class="gallary-img" src="Images/background1.png" alt="">
+        <img class="gallary-img" src="Images/background1.png" alt="">
+        <img class="gallary-img" src="Images/background1.png" alt="">
+
+    </div>
+
+     <div class="grid-gallary">
+        <img class="gallary-img grayscale"  src="Images/Books.jpg" alt="">
+        <img class="gallary-img sepia"      src="Images/Books.jpg" alt="">
+        <img class="gallary-img blur"       src="Images/Books.jpg" alt="">
+        <img class="gallary-img brightness" src="Images/Books.jpg" alt="">
+        <img class="gallary-img contrast"   src="Images/Books.jpg" alt="">
+        <img class="gallary-img hue"        src="Images/Books.jpg" alt="">
+        <img class="gallary-img invert"     src="Images/Books.jpg" alt="">
+        <img class="gallary-img saturate"   src="Images/Books.jpg" alt="">
+        <img class="gallary-img shadow"     src="Images/Books.jpg" alt="">
+   
+    </div>
+    
+    <div class="hero">
+        <img src="images/background1.png" alt="">
+    </div>
+    
+</body>
+</html>
